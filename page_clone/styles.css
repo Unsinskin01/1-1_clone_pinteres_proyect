@@ -1,0 +1,223 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos de la barra de navegación */
+  header{
+  background-color: #fff; /* Color de fondo de la barra */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  padding: 15px 30px; /* Espaciado interno */
+  }
+  .navbar {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 0px 16px;
+    height: 100%;
+  }
+  .navbar_left{
+    display: flex;
+  }
+  /* Estilos del logotipo */
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Estilos del formulario de búsqueda */
+  .search-form {
+    display: flex;
+    align-items: top;
+    position: relative;
+  }
+  
+  .search-form input {
+    padding: 7px;
+    margin-right: 10%;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    background-color: gainsboro;
+    padding-left: 40px;
+  }
+.lupa{
+  position: absolute;
+top: 50%;
+left: 10px;
+transform: translateY(-50%);
+}
+  
+  /* Estilos de los enlaces de navegación */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #663030;
+    font-weight: bold;
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline;
+  }
+  
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Estilos del contenedor principal de Pinterest */
+ 
+  .pinterest-container {
+    column-count: 5;
+    column-gap: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  /*#galeria {
+    margin: 1rem auto;
+    width:100%;
+    max-width:960px;
+    column-count: 5;
+  }
+  /* Estilos de los pines */
+  .pin {
+    width: 236px;
+    height: 450px;
+    border-radius: 15px;
+    margin: 2rem;
+    position: relative;
+    /*display: inline-block;
+    width: 100%;
+    background: #8f5959;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    break-inside: avoid;*/
+  }
+  
+  .pin img {
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+   /* width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;*/
+  }
+  .pin::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: inherit;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease-out;
+  }
+  
+  .pin:hover::before {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  
+  .pin:hover button {
+    display: inline-flex;
+  }
+  
+  .pin:hover .lowermenu {
+    display: flex;
+  }
+  
+  .pin:nth-child(3n) {
+    height: 555px;
+  }
+  
+  .pin:nth-child(2n + 2) {
+    height: 366px;
+  }
+  
+  .pin:nth-child(5n) {
+    height: 400px;
+  }
+  
+  /* menu superior de la carta */
+  .menu-superior {
+    position: absolute;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 25px;
+    top: 15px;
+    right: 10px;
+    border-style: none;
+    display: none;
+  }
+  
+  /* menu inferior de la carta */
+  
+  .lowermenu {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 10px;
+    border-style: none;
+    text-decoration: none;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: none;
+  }
+  
+  .lowermenu ion-icon {
+    background-color: lightgray;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .lowermenu button {
+    padding: 10px;
+    background-color: lightgray;
+    text-decoration: none;
+    border-radius: 15px;
+    border-style: none;
+  }
+  
+  .lowermenu button a {
+    text-decoration: none;
+    border-style: none;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    nav {
+      display: none;
+    }
+  .pin p {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+  
+  /* Estilos del pie de página */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
